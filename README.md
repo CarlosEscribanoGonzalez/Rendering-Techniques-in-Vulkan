@@ -32,8 +32,8 @@ Implementation of multiple rendering techniques in C++, using Vulkan API. All te
 - Physically Based Rendering (PBR) materials
 - Depth prepass for early Z-test
 
-## Requirements
-> ⚠️ **Build configuration:** This project only runs correctly in **Debug | x86**.
-> Other configurations (Release, x64) are currently unsupported and will fail to build or run.
-- Visual Studio 2022 (or compatible)
-- Windows
+## Installation guide
+- Make sure Vulkan SDK is installed and added to your system PATH
+- Execute gen_prj.cmd
+- Open RenderingTechniques.sln in Visual Studio
+- The selected scene is configured as a command-line argument
