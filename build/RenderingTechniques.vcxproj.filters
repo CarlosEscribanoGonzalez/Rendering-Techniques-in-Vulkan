@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\engine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\light.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\material.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\diffuse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\microfacets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\transform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\meshRegistry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\shaderRegistry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\runtime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\vulkan\utilsVK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\vulkan\rendererVK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\vulkan\windowVK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\vulkan\deviceVK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\vulkan\meshVK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\vulkan\extensionsVK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\vulkan\deferredPassVK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\vulkan\compositionPassVK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\vulkan\blurPassVK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\vulkan\denoisePassVK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\vulkan\dephtPassVK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\vulkan\lightingPassVK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\vulkan\motionVectorsPassVK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\vulkan\ppPassVK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\vulkan\shadowPassVK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\vulkan\shadowPassVK_RTX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\vulkan\ssaoPassVK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\src\vulkan\taaPassVK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\light.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\entity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\meshRegistry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\material.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\diffuse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\microfacets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\transform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\runtime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\frame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\shaderRegistry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\vulkan\utilsVK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\vulkan\rendererVK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\vulkan\deviceVK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\vulkan\windowVK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\vulkan\meshVK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\vulkan\extensionsVK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\vulkan\renderPassVK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\vulkan\deferredPassVK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\vulkan\compositionPassVK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\vulkan\blurPassVK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\vulkan\denoisePassVK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\vulkan\depthPassVK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\vulkan\lightingPassVK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\vulkan\motionVectorsPassVK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\vulkan\ppPassVK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\vulkan\shadowPassVK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\vulkan\shadowPassVK_RTX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\vulkan\ssaoPassVK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\include\vulkan\taaPassVK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7F51CB93-51F3-3201-953A-6A7592532D7F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3889D3EF-7D36-37FB-96A9-94D70C5F4E27}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

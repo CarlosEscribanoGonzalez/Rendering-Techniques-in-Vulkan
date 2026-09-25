@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\build\CMakeFiles\d5d471929916b6782e4434de5d1a10ee\Experimental.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\libs\pugixml\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\build\libs\pugixml\CMakeFiles\Experimental" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{EDF1C556-CDB3-3925-B06C-FF48DAE8F933}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

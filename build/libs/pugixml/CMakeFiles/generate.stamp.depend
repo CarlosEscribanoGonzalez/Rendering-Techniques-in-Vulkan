@@ -1,0 +1,13 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.24/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+C:/Program Files/CMake/share/cmake-3.24/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/CTest.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/CTestTargets.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/CTestUseLaunchers.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/DartConfiguration.tcl.in
+C:/Program Files/CMake/share/cmake-3.24/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake
+C:/Users/carlo/Desktop/Master/SegundoSemestre/RA2/RenderingTechniques/libs/pugixml/CMakeLists.txt
+C:/Users/carlo/Desktop/Master/SegundoSemestre/RA2/RenderingTechniques/libs/pugixml/scripts/pugixml-config.cmake.in
+C:/Users/carlo/Desktop/Master/SegundoSemestre/RA2/RenderingTechniques/libs/pugixml/scripts/pugixml.pc.in

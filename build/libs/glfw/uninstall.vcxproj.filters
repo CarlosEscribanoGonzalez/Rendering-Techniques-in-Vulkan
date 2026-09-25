@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\build\CMakeFiles\dcb7808ae262ed50f6830a4e19b480c9\uninstall.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\libs\glfw\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\carlo\Desktop\Master\SegundoSemestre\RA2\RenderingTechniques\build\libs\glfw\CMakeFiles\uninstall" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{EDF1C556-CDB3-3925-B06C-FF48DAE8F933}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

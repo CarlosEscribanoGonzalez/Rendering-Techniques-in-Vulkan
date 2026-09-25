@@ -1,0 +1,82 @@
+<scene>
+	<mesh type="obj">
+		<string name="filename" value=".\scenes\cbox\meshes\backwall.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.8 0.8 0.8"/>
+		</bsdf>
+	</mesh>
+
+	<!--<mesh type="obj">
+		<string name="filename" value=".\scenes\cbox\meshes\ceiling.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.9 0.9 0.9"/>
+		</bsdf>
+	</mesh>-->
+
+	<mesh type="obj">
+		<string name="filename" value=".\scenes\cbox\meshes\floor.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75 0.75 0.75"/>
+		</bsdf>
+	</mesh>
+
+	<mesh type="obj">
+		<string name="filename" value=".\scenes\cbox\meshes\rightwall.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.1 0.8 0.2"/>
+		</bsdf>
+	</mesh>
+
+	<mesh type="obj">
+		<string name="filename" value=".\scenes\cbox\meshes\leftwall.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.8 0.1 0.1"/>
+		</bsdf>
+	</mesh>
+
+	<mesh type="obj">
+		<string name="filename" value=".\scenes\cbox\meshes\sphere1.obj"/>
+		<bsdf type="microfacet">
+			<color name="albedo" value="0.1 0.2 0.9"/>
+			<float name="roughness" value="0.1"/>
+			<float name="metallic" value="0.7"/>
+		</bsdf>
+	</mesh>
+
+	<mesh type="obj">
+		<string name="filename" value=".\scenes\cbox\meshes\sphere2.obj"/>
+		<bsdf type="microfacet">
+			<color name="albedo" value="0.5 0.0 0.0"/>
+			<float name="roughness" value="0.3"/>
+			<float name="metallic" value="0.5"/>
+		</bsdf>
+	</mesh>
+
+	<emitter type="ambient">
+		<radiance name="radiance" value="0.15 0.15 0.15"/>
+	</emitter>
+
+	<emitter type="directional">
+		<position name="direction" value="0.0 -1.0 -0.5"/>
+		<radiance name="radiance" value="1.0 1.0 1.0"/>
+	</emitter>
+
+	<!--<emitter type="point">
+		<position name="position" value="0.0 1.0 0.0"/>
+		<attenuation name="attenuation" value="1.0 0.09 0.032"/>
+		<radiance name="radiance" value="0.25 0.25 0.25"/>
+	</emitter>-->
+
+	<camera type="perspective">
+		<transform name="toWorld">
+			<lookat target="0 0.893051 4.41198"
+					origin="0 0.919769 5.41159"
+					up="0 1 0"/>
+		</transform>
+		<float name="fov" value="27.7856"/>
+		<integer name="width" value="800"/>
+		<integer name="height" value="600"/>
+		<clip name="far" value="15.0"/>
+	</camera>
+
+</scene>
