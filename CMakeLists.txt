@@ -46,6 +46,7 @@ include/frame.h
 include/shaderRegistry.h
 include/input.h
 include/renderer.h
+include/guiPanels.h
 
 # VULKAN
 include/vulkan/utilsVK.h

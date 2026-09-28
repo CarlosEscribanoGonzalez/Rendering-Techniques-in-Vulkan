@@ -12,11 +12,12 @@
 #include "diffuse.h"
 #include "microfacets.h"
 #include "input.h"
+#include "guiPanels.h"
 #include "ImGUI/imgui.h"
 #include "ImGUI/imgui_impl_vulkan.h"
 #include "ImGUI/imgui_impl_glfw.h"
 
-// vulkan includes
+//vulkan includes
 #include "vulkan/rendererVK.h"
 #include "vulkan/renderPassVK.h"
 #include "vulkan/deferredPassVK.h"
@@ -116,7 +117,7 @@ void Engine::run()
         ImGui_ImplVulkan_NewFrame();
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
-        ImGui::ShowDemoWindow();
+        drawGUI();
         ImGui::Render();
 
         //prepare pipeline stages
