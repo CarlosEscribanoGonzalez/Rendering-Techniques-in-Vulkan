@@ -12,6 +12,9 @@
 #include "diffuse.h"
 #include "microfacets.h"
 #include "input.h"
+#include "ImGUI/imgui.h"
+#include "ImGUI/imgui_impl_vulkan.h"
+#include "ImGUI/imgui_impl_glfw.h"
 
 // vulkan includes
 #include "vulkan/rendererVK.h"
@@ -26,6 +29,7 @@
 #include "vulkan/denoisePassVK.h"
 #include "vulkan/lightingPassVK.h"
 #include "vulkan/compositionPassVK.h"
+#include "vulkan/guiPassVK.h"
 #include "vulkan/taaPassVK.h"
 #include "vulkan/ppPassVK.h"
 #include "vulkan/windowVK.h"
@@ -48,7 +52,6 @@ Engine& Engine::instance()
 
     return *m_instance;
 }
-
 
 Engine::Engine() : 
     m_current_frame( 0     ),
@@ -86,9 +89,12 @@ bool Engine::initialize()
 
     createSyncObjects ();
 
+    IMGUI_CHECKVERSION();
+    ImGui::CreateContext();
+    ImGui_ImplGlfw_InitForVulkan(renderer.getWindow().getWindow(), true);
+
     return true;
 }
-
 
 void Engine::run()
 {
@@ -105,6 +111,13 @@ void Engine::run()
         processInput(renderer.getWindow().getWindow());
         //update global uniforms buffers 
         updateGlobalBuffers(); 
+
+        //GUI
+        ImGui_ImplVulkan_NewFrame();
+        ImGui_ImplGlfw_NewFrame();
+        ImGui::NewFrame();
+        ImGui::ShowDemoWindow();
+        ImGui::Render();
 
         //prepare pipeline stages
         VkSubmitInfo submit_info{};
@@ -169,7 +182,6 @@ void Engine::run()
     }
 }
 
-
 void Engine::shutdown()
 {
     RendererVK& renderer = *m_runtime.m_renderer;
@@ -195,7 +207,6 @@ void Engine::shutdown()
     m_runtime.m_renderer->shutdown();
 }
 
-
 void Engine::loadScene( const std::string& i_path )
 {
     m_scene = Scene::loadScene( m_runtime, i_path );
@@ -219,9 +230,7 @@ void Engine::loadScene( const std::string& i_path )
 
     RendererVK& renderer = *m_runtime.m_renderer;
     renderer.getWindow().resize( m_scene->getCamera().getWidth(), m_scene->getCamera().getHeight() );
-
 }
-
 
 void Engine::createSyncObjects()                                  
 {
@@ -253,7 +262,6 @@ void Engine::createSyncObjects()
     }
 }
 
-
 void Engine::destroySyncObjects()
 {
     RendererVK& renderer = *m_runtime.m_renderer;
@@ -265,7 +273,6 @@ void Engine::destroySyncObjects()
         vkDestroyFence    ( renderer.getDevice()->getLogicalDevice(), m_frame_fence[ idx ]                             , nullptr );
     }
 }
-
 
 void Engine::createRenderPasses ()
 { 
@@ -452,6 +459,12 @@ void Engine::createRenderPasses ()
     composition_pass->initialize();
     m_render_passes.push_back(composition_pass);
 
+    //GUI:
+    auto gui_pass = std::make_shared<GuiPassVK>(m_runtime,
+        m_runtime.m_renderer->getWindow().getSwapChainImages());
+    gui_pass->initialize();
+    m_render_passes.push_back(gui_pass);
+
     if( m_scene )
     {
         for( auto pass : m_render_passes )
@@ -463,7 +476,6 @@ void Engine::createRenderPasses ()
         }
     }
 }
-
 
 void Engine::destroyRenderPasses()
 {
@@ -610,7 +622,6 @@ void Engine::updateGlobalBuffers()
     }
 }
 
-
 void Engine::createAttachments()
 {
     uint32_t width, height;
@@ -678,7 +689,6 @@ void Engine::createAttachments()
     UtilsVK::setObjectName( m_runtime.m_renderer->getDevice()->getLogicalDevice(), (uint64_t)( m_render_target_attachments.m_denoise_history_attachment.m_image), VK_DEBUG_REPORT_OBJECT_TYPE_IMAGE_EXT, "Denoise history ");
 }
 
-
 void Engine::destroyAttachments()
 {
     UtilsVK::freeImageBlock( *m_runtime.m_renderer->getDevice(), m_render_target_attachments.m_color_attachment          );
@@ -697,7 +707,6 @@ void Engine::destroyAttachments()
     UtilsVK::freeImageBlock( *m_runtime.m_renderer->getDevice(), m_render_target_attachments.m_visibility_attachment);
     UtilsVK::freeImageBlock( *m_runtime.m_renderer->getDevice(), m_render_target_attachments.m_denoise_history_attachment);
 }
-
 
 void Engine::createSamplers()
 {
@@ -722,7 +731,6 @@ void Engine::createSamplers()
 
     UtilsVK::setObjectName( m_runtime.m_renderer->getDevice()->getLogicalDevice(), (uint64_t)m_global_samplers[ 0 ], VK_DEBUG_REPORT_OBJECT_TYPE_SAMPLER_EXT, "Global Sampler"  );
 }
-
 
 void Engine::destroySamplers()
 {

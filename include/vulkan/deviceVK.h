@@ -32,6 +32,33 @@ namespace MiniEngine
             return m_command_pool;
         }
 
+        uint32_t getQueueFamily()
+        {
+            uint32_t queueFamilyCount = 0;
+
+            vkGetPhysicalDeviceQueueFamilyProperties(
+                m_physical_device,
+                &queueFamilyCount,
+                nullptr
+            );
+
+            std::vector<VkQueueFamilyProperties> queueFamilies(queueFamilyCount);
+
+            vkGetPhysicalDeviceQueueFamilyProperties(
+                m_physical_device,
+                &queueFamilyCount,
+                queueFamilies.data()
+            );
+            for (uint32_t i = 0; i < queueFamilyCount; ++i)
+            {
+                if (queueFamilies[i].queueFlags & VK_QUEUE_GRAPHICS_BIT)
+                {
+                    return i;
+                }
+            }
+            throw std::runtime_error("No graphics queue family found.");
+        }
+
         uint32_t getMemoryTypeIndex( uint32_t typeBits, VkMemoryPropertyFlags properties ) const;
 
     private:
