@@ -13,11 +13,35 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/libs/tinyobjloader)
 
 find_package(Vulkan REQUIRED)
 
+add_library(imgui STATIC
+	include/ImGUI/imconfig.h
+	include/ImGUI/imgui.h
+	include/ImGUI/imgui_impl_glfw.h
+	include/ImGUI/imgui_impl_vulkan.h
+	include/ImGUI/imgui_internal.h
+	include/ImGUI/imstb_rectpack.h
+	include/ImGUI/imstb_textedit.h
+	include/ImGUI/imstb_truetype.h
+
+	src/ImGUI/imgui.cpp
+	src/ImGUI/imgui_draw.cpp
+	src/ImGUI/imgui_impl_glfw.cpp
+	src/ImGUI/imgui_impl_vulkan.cpp
+	src/ImGUI/imgui_tables.cpp
+	src/ImGUI/imgui_widgets.cpp
+	src/ImGUI/imgui_demo.cpp
+)
+
+target_include_directories(imgui PUBLIC
+	include/ImGUI
+	${Vulkan_INCLUDE_DIRS}
+)
+
+target_link_libraries(imgui PUBLIC glfw ${Vulkan_LIBRARIES})
 
 include_directories(
 	${Vulkan_INCLUDE_DIRS}
 	include
-	include/ImGUI
 	libs
 	libs/tinyformat
 	libs/filesystem
@@ -72,16 +96,6 @@ include/vulkan/ssaoPassVK.h
 include/vulkan/taaPassVK.h
 include/vulkan/guiPassVK.h
 
-#ImGUI
-include/ImGUI/imconfig.h
-include/ImGUI/imgui.h
-include/ImGUI/imgui_impl_glfw.h
-include/ImGUI/imgui_impl_vulkan.h
-include/ImGUI/imgui_internal.h
-include/ImGUI/imstb_rectpack.h
-include/ImGUI/imstb_textedit.h
-include/ImGUI/imstb_truetype.h
-
 
 #CPPS
 main.cpp
@@ -121,15 +135,6 @@ src/vulkan/shadowPassVK_RTX.cpp
 src/vulkan/ssaoPassVK.cpp
 src/vulkan/taaPassVK.cpp
 src/vulkan/guiPassVK.cpp
-
-#ImGUI
-src/ImGUI/imgui.cpp
-src/ImGUI/imgui_draw.cpp
-src/ImGUI/imgui_impl_glfw.cpp
-src/ImGUI/imgui_impl_vulkan.cpp
-src/ImGUI/imgui_tables.cpp
-src/ImGUI/imgui_widgets.cpp
-src/ImGUI/imgui_demo.cpp
 )
 
 
@@ -138,4 +143,4 @@ VS_DEBUGGER_WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}"
 VS_DEBUGGER_COMMAND_ARGUMENTS "$(SolutionDir)../scenes/shadows/shadows.xml"
 )
 set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT RenderingTechniques)
-target_link_libraries(RenderingTechniques glfw pugixml::pugixml ${Vulkan_LIBRARIES} tinyobjloader )
+target_link_libraries(RenderingTechniques glfw pugixml::pugixml ${Vulkan_LIBRARIES} tinyobjloader imgui)

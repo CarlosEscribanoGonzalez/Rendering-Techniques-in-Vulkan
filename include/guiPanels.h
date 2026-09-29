@@ -102,7 +102,7 @@ void drawReflectionsPanel() {
 
 void setupNextPanel(int idx) {
 	ImGui::SetNextWindowCollapsed(true, ImGuiCond_Once);
-	ImGui::SetNextWindowSize(ImVec2(250, 0), ImGuiCond_Once);
+	ImGui::SetNextWindowSize(ImVec2(250, 0), ImGuiCond_Always);
 	ImGui::SetNextWindowPos(ImVec2(10, 10 + idx * 20));
 }
 
