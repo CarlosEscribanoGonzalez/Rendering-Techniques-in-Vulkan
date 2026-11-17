@@ -5,8 +5,7 @@ Implementation of multiple rendering techniques in C++, using Vulkan API. All te
 - Configurable Screen Space Ambient Occlusion (SSAO)
 - Configurable Screen Space Directional Occlusion (SSDO)
 <p align = "center">
-  <img width="322" height="278" alt="SSAO" src="https://github.com/user-attachments/assets/1887f940-d8c4-41ef-9f21-962c23a69d02" />
-  <img width="322" height="278" alt="SSDO" src="https://github.com/user-attachments/assets/cf711f8c-ca46-45c1-93f4-5a534b504442" />
+  <img width="800" height="450" alt="AO" src="https://github.com/user-attachments/assets/956404cf-59c2-4d9c-861d-46cbe96d68f9" />
 </p>
 
 ## Anti-Aliasing
@@ -14,8 +13,7 @@ Implementation of multiple rendering techniques in C++, using Vulkan API. All te
 - Multisample Anti-Aliasing (MSAA) 2x, 4x and 8x
 - Fast Approximate Anti-Aliasing (FXAA)
 <p align = "center">
-  <img width="322" height="278" alt="No AA" src="https://github.com/user-attachments/assets/f9eafc6c-1ba5-4f3d-91a3-1ef1bda890c3" />
-  <img width="322" height="278" alt="taa" src="https://github.com/user-attachments/assets/2cc443b9-5771-4f4f-a800-613f875544f5" />
+  <img width="800" height="450" alt="AA" src="https://github.com/user-attachments/assets/f16d1eef-6ab4-4f95-805f-63a8d3661f91" />
 </p>
 
 ## Shadow Mapping
@@ -24,8 +22,7 @@ Implementation of multiple rendering techniques in C++, using Vulkan API. All te
 - Cascaded Shadow Maps for directional lights
 - Omnidirectional Shadow Maps for point lights
 <p align = "center">
-  <img width="322" height="354" alt="PCF" src="https://github.com/user-attachments/assets/8d3f74b0-e949-4795-b8d0-6de939579778" />
-  <img width="322" height="354" alt="Omnidirectional shadows" src="https://github.com/user-attachments/assets/1d538119-e90c-402a-adaf-67313f4faa1b" />
+  <img width="800" height="450" alt="PCF" src="https://github.com/user-attachments/assets/6270fb63-7e20-4e14-85b5-958ae83ab937" />
 </p>
 
 ## Real-time Ray Tracing
@@ -35,8 +32,7 @@ Implementation of multiple rendering techniques in C++, using Vulkan API. All te
 - Reflections
 - Dynamic acceleration structures (TLAS and BLAS)
 <p align = "center">
-  <img width="322" height="354" alt="Denoised soft shadows" src="https://github.com/user-attachments/assets/038f4769-f11b-4075-a2bc-7276889ebde8" />
-  <img width="360" height="354" alt="Reflections" src="https://github.com/user-attachments/assets/57bdcc1e-fc77-4826-8a1d-2bb2b912a623" />
+  <img width="800" height="450" alt="RT Shadows" src="https://github.com/user-attachments/assets/251a111f-7232-4121-bea6-f8ebfe42b174" />
 </p>
 
 ## Post-processing via ping-pong buffering
@@ -44,15 +40,15 @@ Implementation of multiple rendering techniques in C++, using Vulkan API. All te
 - Chromatic aberration
 - Bloom
 <p align = "center">
-  <img width="322" height="278" alt="Chromatic aberration" src="https://github.com/user-attachments/assets/d5617b49-7380-4f2d-b123-b13a570e3d2c" />
-  <img width="322" height="278" alt="Bloom)" src="https://github.com/user-attachments/assets/17d6dc25-db4a-4597-ac00-9b6d1db5b273" />
+  <img width="400" height="370" alt="Chromatic aberration" src="https://github.com/user-attachments/assets/39fa98ca-d73a-4676-9068-88f50ca9f055" />
+  <img width="400" height="370" alt="Bloom" src="https://github.com/user-attachments/assets/950e20e9-2bb0-4fc2-afee-0d85ce183a46" />
 </p>
 
 ## Other features
 - Physically Based Rendering (PBR) materials
 - Depth prepass for early Z-test
 <p align = "center">
-  <img width="665" height="312" alt="PBR materials" src="https://github.com/user-attachments/assets/c4124b5c-d41a-4ea3-8f4a-1c5b1008ab9b" />
+  <img width="800" height="385" alt="PBR Materials" src="https://github.com/user-attachments/assets/9dd87260-7d84-4301-ac2f-498884e4d629" />
 </p>
 
 ## Installation guide
