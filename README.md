@@ -54,5 +54,5 @@ Implementation of multiple rendering techniques in C++, using Vulkan API. All te
 ## Installation guide
 - Make sure Vulkan SDK is installed and added to your system PATH
 - Execute gen_prj.cmd
-- Open RenderingTechniques.sln in Visual Studio
+- Open RenderingTechniques.sln in Visual Studio (found in the `build` folder)
 - The selected scene is configured as a command-line argument
